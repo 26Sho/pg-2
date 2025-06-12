@@ -1,37 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-*{
-  padding: 0%;
-  margin: 0%;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family:"Roboto Slab", serif;
+  font-family: "Roboto Slab", serif;
+  background-color: #F4F4F4;
   color: #333;
-  background: #fff;
+  line-height: 1.6;
+}
+
+.imagen_1 {
+  background: url('../assets/bgHeader.png');
+  background-size: cover;
+  padding: 100px 40px;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
 }
 
 h1 {
   color: #ec6f2d;
 }
 
-.img {
-  padding: 100px 40px;
-  background: #f8f8f8;
-  background: url('../assets/img/bgHeader.png');
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} 
-
-button {
-  margin-top: 10px;
+.btn {
+  margin-top: 200px;
   padding: 10px 20px;
   background: #e86c1a;
   color: white;
@@ -40,14 +39,82 @@ button {
   cursor: pointer;
 }
 
-.text {
+button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: #e86c1a;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+section.feat {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   padding: 40px 20px;
   flex-wrap: wrap;
 }
 
-.text-reverse{
-  flex-direction: row-reverse;
+section.feat.reverse {
+  flex-direction: row;
+}
+
+section.feat .text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  margin: 20px;
+}
+
+section.feature img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.imagen_2 {
+  background: url('../assets/bgDown.png');
+  background-size: cover;
+  padding: 100px 40px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.text.final {
+  width: 50%;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.footer {
+  background-color: #e86c1a;
+  color: white;
+  padding: 100px 40px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2em;
+}
+
+.footer h4 {
+  margin-bottom: 0.5em;
+}
+
+.footer p {
+  margin: 0.2em 0;
+}
+
+.footer-container {
+  text-align: center;
+  margin-top: 8em;
+  font-size: 0.9em;
 }
